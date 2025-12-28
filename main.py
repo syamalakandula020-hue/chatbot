@@ -1,7 +1,7 @@
 from flask import Flask,request,jsonify,render_template
 from google import genai
 
-client=genai.Client(api_key="SECRET_KEY")
+client=genai.Client(api_key="AIzaSyCnxZ3Mn2WEHkBzOFFVdehlg50OO56g0yk")
 
 app=Flask(__name__)
 
