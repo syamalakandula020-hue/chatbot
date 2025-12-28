@@ -2,8 +2,10 @@ from flask import Flask, request, jsonify, render_template
 from flask_cors import CORS
 from google import genai
 
+
 client = genai.Client(api_key="SECRET_KEY")
 model_id = "gemini-2.5-flash-lite"
+
 
 app = Flask(__name__)
 CORS(app)  # Enable CORS for local development
@@ -61,4 +63,6 @@ def tts():
         return jsonify({"error": str(e)}), 500
 
 if __name__ == '__main__':
+
     app.run(port=8001, debug=True)
+
