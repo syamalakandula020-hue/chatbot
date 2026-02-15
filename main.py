@@ -3,7 +3,7 @@ from flask_cors import CORS
 from google import genai
 
 
-client = genai.Client(api_key="SECRET_KEY")
+client = genai.Client(api_key="AIzaSyDmjrtQIOZdGYWKmTjybwNLDbXayw8")
 model_id = "gemini-2.5-flash-lite"
 
 
